@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+// import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const options = [
    'View contact',
@@ -37,7 +37,8 @@ const ITEM_HEIGHT = 48;
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MoreVertIcon />
+        {/* <MoreVertIcon /> */}
+        <i class='fa fa-bar'/>
       </IconButton>
       <Menu
         id="long-menu"
