@@ -1,0 +1,34 @@
+.message-menu{
+    width: 50vw;
+    background-color: white;
+    color:#333;
+}
+
+.btn-message{
+    width: 50vw;
+    color: #333;
+    padding: 1rem;
+    border:1px solid #ccc;
+    margin:2rem;
+    background: transparent ;
+}
+.btn-message:focus{
+    outline: none;
+}
+
+.bg-blue{
+    background: var(--main-color)
+}
+
+.show-btn{
+    width: 50vw !important;
+    cursor: pointer;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    padding: .75rem;
+}
+
+.height-support-50{
+    height:25vh;
+}
+

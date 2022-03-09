@@ -1,0 +1,38 @@
+#table{
+    width:48vw !important;
+}
+
+#profile-pic{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    display: block;
+}
+
+.icon-size{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.send-btn{
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    color:white;
+    border: none;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    height: 3.5rem;
+}
+
+.send-input{
+    width: 75% !important;
+    padding: 1rem;
+    border: 1px solid var(--main-color);
+    border-bottom-left-radius:48px;
+    border-top-left-radius: 48px;
+    color:#ccc;
+    height: 3.5rem;
+}
+.send-input:focus{
+    outline: none;
+}

@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+main{
+    margin-top: 5.313rem;
+    padding: 2rem 1.5rem; 
+    background: #f1f5f9;
+    min-height: calc(100vh - 5.625rem);
+}
+
+.cards{
+   background-color: #fff;
+}
+.cards>h2{
+    padding: 1.2rem;
+}
+.cards>hr{
+    color: #ccc;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.card-single{
+    width: 70%;
+    min-height: 25vh ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+}
+.card-single>p,
+.card-single>.homepage-link{
+    font-weight: 550;
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+}
+.fa-pen, .fa-trash{
+    float: right;
+    color: #27abe2;
+    font-size: 1rem;
+}
+
+.card-blue{
+    background-color: var(--main-color);
+    padding: 2rem;
+}
+.card-text-grey{
+    color:#f1f5f9 !important;
+    font-size: 1.2rem;
+}
+
+.no-border{
+    border: none;
+}
+
+.card-single>hr{
+    margin-top: .25rem;
+}
+.card-single>.name{
+    text-transform: capitalize;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+}
+.card-single>.email{
+    color: rgb(133, 131, 131);
+    text-transform: lowercase;
+    font-weight: 400;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+.card-single>.card-text-light{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: .75rem;
+}
+.card-single>.homepage-link{
+    color: var(--main-color);
+    margin-top: 2.0rem !important;
+    cursor: pointer;
+}
+.card{
+   background-color: #fff;
+}
+
+@media only screen and (max-width:560px){
+    main{
+        margin-top: 5.313rem;
+        padding: 2rem 1.5rem; 
+        background: #f1f5f9;
+        min-height: calc(100vh - 5.625rem);
+        width: 85vw;
+        margin-left: 15vw;
+    }
+    .card-single{
+        width: 100%;
+        min-height: 25vh ;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 1.5rem;
+        padding: 1rem;
+    }
+    .cards>h2{
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    main{
+        margin-top: 5.313rem;
+        padding: 2rem 1.5rem; 
+        background: #f1f5f9;
+        min-height: calc(100vh - 5.625rem);
+        width: calc(100vh - 5.625rem);
+        margin-left: -10vw;
+    }
+    .card-single{
+        width: 100%;
+        min-height: 25vh ;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 1.5rem;
+        padding: 1rem;
+    }
+    .cards>h2{
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+}

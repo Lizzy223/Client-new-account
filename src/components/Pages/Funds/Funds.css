@@ -1,0 +1,35 @@
+.border-grey{
+    border:1px solid #ccc !important;
+    width:100%;
+}
+
+.border-grey> option{
+    padding:5px;
+}
+
+.funds-button{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius:8px;
+    color:#1d2231;
+    background:white;
+    font-weight:bold;
+    margin:.25rem;
+}
+
+.fund-blue-button{
+    color:#fff;
+    background: #1d2231;
+    padding:.5rem;
+    font-size: smaller;
+    outline:none;
+    border:none;
+    white-space:none;
+    width:100%;
+}
+
+.select>.option{
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin:1rem;
+}

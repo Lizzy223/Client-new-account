@@ -1,0 +1,99 @@
+td{
+    padding: .75rem;
+    
+}
+
+tr{
+    /* height:30vh !important; */
+}
+
+th{
+    padding:.75rem;
+    color:'#ccc'
+}
+
+.width-30{
+    width:30%;
+    float:left;
+}
+
+.width-70{
+    width:65%;
+    float:right;
+}
+
+.width-100{
+    width:43vw !important;
+}
+
+.bg-main{
+  background-color: var(--main-color);
+}
+
+
+.card-notsingle{
+  width: 20vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1.75rem;
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
+
+/* ...................react-tabs styling...................... */
+.react-tabs {
+    -webkit-tap-highlight-color: red;
+  }
+  
+  .react-tabs__tab-list {
+    margin: 0 0 2px;
+    padding: 0;
+    width: 20vw !important;
+    
+  }
+  
+  .react-tabs__tab {
+    display: inline-block;
+    color:red !important;
+    position: relative;
+    list-style: none;
+    padding: .5px;
+    cursor: pointer;
+    
+  }
+  
+  .react-tabs__tab--selected {
+    background: #fff;
+    border-color: #aaa;
+    color: #ccc;
+    border:none;
+  }
+  
+  .react-tabs__tab--disabled {
+    color: GrayText;
+    cursor: default;
+  }
+  
+  .react-tabs__tab:focus {
+    box-shadow: 0 0 5px hsl(208, 99%, 50%);
+    /* border-color: hsl(208, 99%, 50%); */
+    outline: none;
+  }
+  
+  .react-tabs__tab:focus:after {
+    content: "";
+    position: absolute;
+        background: #fff;
+  }
+  
+  .react-tabs__tab-panel {
+    display: none;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+    
+  }
+

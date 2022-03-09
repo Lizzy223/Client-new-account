@@ -1,0 +1,58 @@
+.cards{
+    background-color: #fff;
+ }
+ .cards>h2{
+     padding: 1.2rem;
+     color: rgb(49, 49, 49);
+ }
+ .cards>hr{
+     color: rgb(226, 225, 225);
+ }
+ form{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .form-wrap{
+     width: 35vw;
+    margin: 1rem;
+ }
+ .form-wrap>.label{
+     margin-left: .25rem;
+     color: #5a5a5a;
+     display: block;
+ }
+ .star{
+     color: orangered;
+ }
+ .form-wrap>input,
+ .form-wrap>select{
+     outline: none;
+     border:none;
+     border-radius: 0;
+     border-bottom: 1px solid #5a5a5a !important;
+     padding: .5rem;
+     width: 100%;
+ }
+ .button{
+     width: 75%;
+     padding: 1rem 2rem;
+     color:#fff;
+     background-color: var(--main-color);
+     margin: auto;
+     margin-bottom: 1.5rem;
+     margin-top: 1.5rem;
+     border: none;
+     font-size: 1rem;
+     text-transform: uppercase;
+ }
+ .button:hover{
+     cursor: pointer;
+     background-color: #28a4da;
+ }
+
+ @media only screen and (max-width:560px) {
+    .form-wrap{
+        width: 100%;
+       margin: 1rem;
+    }   
+ }

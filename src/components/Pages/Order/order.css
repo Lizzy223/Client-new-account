@@ -1,0 +1,236 @@
+.cards{
+    background-color: #fff;
+    width:100% !important;
+ }
+ .cards>h2{
+     padding: 1.2rem;
+     color: rgb(49, 49, 49);
+ }
+ .cards>hr{
+     color: rgb(226, 225, 225);
+ }
+
+.round-circle-complete{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:green !important;
+}
+
+.round-circle-Incomplete{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:yellow !important;
+}
+
+.round-circle-InProgress{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:purple !important;
+}
+
+.round-circle-notStarted{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:red !important;
+}
+
+ .order-tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc !important;
+    background-color: #fff !important;
+  }
+
+  .bg-order-dark{
+    background:var(--main-color);
+  }
+
+  .orange-bg{
+    color: gold;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .order-tab button {
+    background-color: transparent;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    margin: .25rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .order-tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border-bottom: 2px solid #27abe2;
+    color: var(--main-color)
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .no-orders{
+      text-align: center;
+      margin: auto;
+      padding: 2.5rem;
+      min-height: 45vh;
+  }
+  .no-orders p:first-child{
+      font-weight: 550;
+      font-size: 1.2rem;
+      color: rgb(65, 64, 64);
+      margin-top: 1rem;
+  }
+  .no-orders p:nth-child(2){
+      margin-top: 1.2rem;
+      color: rgb(75, 74, 74);
+  }
+
+  .no-orders>button{
+      padding: 1rem 2rem;
+      color: #fff;
+      background-color: var(--main-color);
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-top: 1.5rem;
+  }
+  .no-orders>button:hover{
+      cursor: pointer;
+      background-color: #2292c2;
+  }
+
+  .order-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid rgb(65, 64, 64);
+    border-radius: 4px;
+    padding:1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    width:100% !important;
+}
+.order-image{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #000;
+}
+.order-details p:first-child{
+    color: rgb(65, 64, 64);
+    margin-bottom: 1rem;
+}
+.order-details p:nth-child(2){
+    font-weight: 500;
+    color:rgb(124, 119, 119)
+}
+.order-details p:last-child{
+    color:#000;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+.status{
+  padding: 0.5rem;
+  background-color: yellowgreen;
+  text-align: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.n-status{
+  padding: 0.5rem;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.order-button button{
+    padding: 1rem 2rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.order-button button:hover{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border: none ;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+}
+/* TabList, Tab{
+  border: none;
+} */
+#tab{
+  border-top: none !important;
+}
+
+/* mobile view */
+
+@media only screen and (max-width:560px) {
+  .order-container{
+    display: block;
+    justify-content: space-between;
+    border: none;
+    box-shadow: 2px 3px 2px 1px rgb(65, 64, 64);;
+    border-radius: 8px;
+    padding:1.5rem;
+    margin: 1.75rem;
+}
+.order-image{
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #000;
+  margin: .625rem;
+}
+.order-details p:first-child{
+  color: rgb(65, 64, 64);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.order-details p:nth-child(2){
+  font-weight: 500;
+  color:rgb(124, 119, 119)
+}
+.order-details p:last-child{
+  color:#000;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.order-button button{
+  padding: 1rem 2rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+}
