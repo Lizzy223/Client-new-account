@@ -1,0 +1,116 @@
+#sidebar{
+    width:21.563rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--main-color) ;
+    z-index: 100;
+    transition: width 300ms;
+}
+.sidebar-brand{
+    height: 5.625rem;
+    padding: 1rem 0rem 1rem 2rem;
+    color:#fff;
+}
+.sidebar-brand span{
+    display: inline-block;
+    padding-right: 1.2rem;
+}
+.sidebar-menu {
+    margin-top: 1rem;
+}
+.sidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 2rem;
+}
+.sidebar-menu a{
+    padding-left: 1rem;
+    display: block;
+    color: #fff;
+    font-size: smaller;
+}
+.sidebar-menu a.active{
+    background-color: #fff;
+    color: var(--main-color);
+    padding-top: .5rem ;
+    padding-bottom: .5rem;
+    border-top-left-radius: 0.875rem;
+    border-bottom-left-radius: 0.875rem;
+}
+.sidebar-menu a span:first-child {
+    font-size: small;
+    padding-right: 1rem;
+}
+
+#nav-toggle:checked + #sidebar {
+    width: 4.375rem;
+}
+
+#nav-toggle:checked + #sidebar .sidebar-brand,
+#nav-toggle:checked + #sidebar li{
+    padding-left: 1rem;
+    text-align: center;
+}
+
+#nav-toggle:checked + #sidebar li a{
+    padding-left: 0rem;
+}
+
+
+#nav-toggle:checked + #sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + #sidebar li a span:last-child{
+    display: none;
+}
+
+.right{
+    margin-left: .5rem;
+}
+.mt-link-3{
+    margin-top: 1.5rem;
+}
+.dropdown-menu{
+    background-color: var(--main-color);
+    padding: 1rem;
+    width:95%;
+    /* opacity:.5; */
+}
+
+.dropdown-item{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.dropdown-item:hover{
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.btn-dropdown{
+    background-color: none;
+    color:#fff;
+    width: 95%;
+    text-align: left;
+    margin-left: 1rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn-dropdown:hover{
+    background-color: #fff;
+    color:var(--main-color);
+}
+
+@media only screen and (max-width: 750px){
+    #sidebar{
+        width:5.563rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: var(--main-color) ;
+        z-index: 100;
+        transition: width 300ms;
+    }
+}
