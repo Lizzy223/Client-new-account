@@ -98,6 +98,20 @@
       transition: margin-left 300ms;
       margin-left: 21.563rem;
   }
+
+  /* path[Attributes Style] {
+    d: path("M 185.503 117.065 L 185.503 35.1196 Q 185.503 35.1196 185.503 35.1196 L 206.617 35.1196 Q 206.617 35.1196 206.617 35.1196 L 206.617 35.1196 L 206.617 117.065 L 206.617 117.065 Z");
+    fill: rgba(0, 143, 251, 0.85);
+    fill-opacity: 1;
+    stroke-opacity: 1;
+    stroke-linecap: round;
+    stroke-width: 0;
+    stroke-dasharray: 0;
+    clip-path: url(#gridRectMask82119x9n);
+    border-raduis:50%;
+} */
+
+
   @media only screen and (max-width: 978px){
     .container{
       grid-template-columns: 1fr;

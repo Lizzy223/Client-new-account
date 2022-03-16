@@ -1,7 +1,12 @@
 import React from 'react'
 import './Password.css'
+import 'formik'
+import 'yup'
 
 const Password = () => {
+
+   
+
     return (
         <main>
            <form className='cards'>

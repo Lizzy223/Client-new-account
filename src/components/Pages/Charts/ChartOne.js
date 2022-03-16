@@ -12,8 +12,20 @@ class ChartOne extends Component {
           },
           xaxis: {
             categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-          }
+          },
+          plotOptions: {
+            column: {
+                borderRadius: 10  // How to make it only for top side. Don't apply it to bottom side ? 
+            }
+        }
         },
+        plotOptions: {
+          column: {
+            borderRadiusTopLeft: 5,
+            borderRadiusTopRight: 5,
+          },
+        },
+       
         series: [
           {
             name: "series-1",
@@ -21,9 +33,11 @@ class ChartOne extends Component {
           }
         ]
       };
+      
     }
   
     render() {
+      
       return (
         <div className="app">
           <div className="row">
@@ -33,6 +47,11 @@ class ChartOne extends Component {
                 series={this.state.series}
                 type="bar"
                 width="300"
+                style={{
+                  borderTopLeftRadius: '50% !important',
+                  borderTopRightRadius:'50% !important',
+                  borderRadius:20
+                }}
               />
             </div>
           </div>

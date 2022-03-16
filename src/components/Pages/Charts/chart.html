@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line{
+            width:70%;
+            height: 1px;
+            background-color: #ccc;
+            display: block;
+            margin-top: 2.5rem;
+            position: relative;
+        }
+        .chart-one{
+            height: 6rem;
+            width: 2rem;
+            background-color: pink;
+            color: red;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            
+            display: block;
+            position: absolute;
+            top: 0;
+            transform: translateY(115%);
+            margin-left: 2rem;
+            
+        }
+        
+        .chart-one:hover~ .view-one{
+            cursor: pointer;
+            display: block;
+        }
+
+        .chart-two:hover{
+            cursor: pointer;
+        }
+
+        .chart-two{
+            height: 8rem;
+            width: 2rem;
+            background-color: orange;
+            color: orange;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            z-index: 20;
+            display: block;
+            position: absolute;
+            top: 0;
+            transform: translateY(60%);
+            margin-left: 7rem;
+        }
+       
+
+        .chart-three{
+            height: 10rem;
+            width: 2rem;
+            background-color: grey;
+            color: red;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            z-index: 20;
+            display: block;
+            position: absolute;
+            top: 0;
+            transform: translateY(29%);
+            margin-left:12rem;
+        }
+        .chart-three:hover{
+            cursor: pointer;
+        }
+
+        .view-one{
+            border: 1px solid #ccc;
+            padding: .75rem;
+            font-size: small;
+            color:#ccc;
+            width: 15%;
+            display: none;
+            transform: translateY(-100%);
+            background-color: #fff;
+            z-index: 550;
+            
+        }
+
+        .range{
+            display: flex;
+            flex-direction: row;
+            display: block;
+            
+        }
+
+        .chart{
+            width: 50%;
+            height:50%;
+        margin: auto;
+            
+    }
+        
+    </style>
+</head>
+<body>
+    <div class='chart'>
+        <div class=''>
+            <span class='line'></span>
+            <span class='line'></span>
+            <span class='line'></span>
+            <span class='line'></span>
+            <span class='line'></span>
+
+        </div>
+        <div class=''>
+            <span class='chart-one'></span>
+            <span class='chart-two'></span>
+            <span class='chart-three'></span>
+            <div class='view-one'>
+                lorem posum lorem posum lorem
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let nine = getElementByClassName.InnerHtml(chartOne)
+    </script>
+</body>
+</html>
